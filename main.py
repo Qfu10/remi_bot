@@ -46,6 +46,8 @@ async def on_message(message):
     prefix=lst.pop(0)
     q = ' '.join(lst)        
     if message.guild.id == 582854818243018752 or message.guild.id == 681089524226457620:  
+      if prefix == "r!avatar kodeti":
+          await message.channel.send("https://cdn.discordapp.com/avatars/294920109775126539/73430b2d75a8364baaab15fde2db9b03.png?size=256")
       if prefix == "r!anime":
           await message.channel.send(embed = al(q, message.author, 0))
       elif prefix == "r!manga":
